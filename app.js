@@ -7,7 +7,7 @@ const { json } = require("body-parser");
 const app = express();
 
 mailchimp.setConfig({
-    apiKey: "0b9b46d4b5c7445cede47d86848aadfb-us18",
+    apiKey: "-",
     server: "us18",
 });
 
@@ -44,7 +44,7 @@ app.post("/", function (req, res) {
 
     const run = async () => {
         try {
-            const response = await mailchimp.lists.addListMember("b0cc6ae9b9", {
+            const response = await mailchimp.lists.addListMember("-", {
                 email_address: subscribingUser.email,
                 status: "subscribed",
                 merge_fields: {
@@ -75,8 +75,3 @@ app.listen(3000, function () {
     console.log("The server is running on port 3000.");
 });
 
-//API Key
-// 22945d633db56fe7a6d1afca31c764fe-us18
-
-//LIST Id
-// b0cc6ae9b9
