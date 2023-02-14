@@ -6,3 +6,6 @@ a single page web site that allow people signup to my mailing list.
 ・ How to integrate with MailChimp.<br>
 ・ A way to work with MailChimp APIs.<br>
 ・ Post data and communicate with MailChimp APIs.
+
+# Live mode
+https://continuous-cool-lychee.glitch.me/
